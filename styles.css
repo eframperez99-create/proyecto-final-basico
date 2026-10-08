@@ -307,8 +307,8 @@ h1, h2, h3 {
   font-size: clamp(2.8rem, 7vw, 5rem);
   line-height: 1.02;
   margin-bottom: 24px;
-  color: var(--white);
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.45);
+  transform: skew(-5deg);
+  text-shadow: 4px 0 var(--cyan), -4px 0 var(--magenta), 6px 6px 0 rgba(0, 0, 0, 0.6);
 }
 
 .hero p {
@@ -327,23 +327,10 @@ h1, h2, h3 {
 }
 
 .hero-stats {
-  position: relative;
   display: flex;
-  justify-content: center;
-  text-align: center;
   gap: 40px;
-  padding-top: 30px;
-  max-width: 560px;
-}
-
-/* línea punteada: mismo ancho que el bloque de cifras */
-.hero-stats::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   border-top: 4px dashed var(--gold);
+  padding-top: 30px;
 }
 
 .stat-number {
